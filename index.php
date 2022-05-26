@@ -13,10 +13,7 @@
     <!--Style-->
     <link rel="stylesheet" href="style.css">
     <!--Fontawesome-->
-    <script
-      src="https://kit.fontawesome.com/52339f9582.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/52339f9582.js" crossorigin="anonymous"></script>
     <!--favicon-->
     <link rel="shorcut icon" href="img/logo-makr.png" type="image/png">
     <title>Distance Between cities</title>
@@ -24,35 +21,46 @@
   <body>
     <div class="jumbotron py-1">
         <div class="container-fluid">
-            <h1 class="display-4">Distance between cities</h1>
-            <p class="h4">We help you to calculate travelling distances.</p>
+            <h1 class="display-4">Distance between cities </h1>
+            <p class="h4">We help you to calculate travelling distances and times in different ways.</p>
         </div>
     </div>
     <!--FORM with horizontal field + label-->
     <div class="container">
         <form>
-            <div class="row mt-3">
+            <div class="row mt-2">
                 <label class="col-2 col-form-label" for="from">From:</label>
                 <div class="col-10">
                     <input type="text" id="from" placeholder="Origin" class="form-control">
                 </div>
             </div>
-            <div class="row mt-3">
+            <div class="row mt-2">
                 <label class="col-2 col-form-label" for="to">To:</label>
                 <div class="col-10">
                     <input type="text" id="to" placeholder="Destination" class="form-control">
                 </div>
             </div>
+            <div class="row mt-2">
+                <div class="offset-2 col-10 form-floating">
+                    <select class="form-select" id="mode">
+                        <option value="DRIVING">Driving </option>
+                        <option value="WALKING">Walking</option>
+                        <option value="BICYCLING">Bicycling</option>
+                        <option value="TRANSIT">Transit</option>
+                    </select>
+                    <label id="labelLogo" for="floatingSelect"><i class="fas fa-car"></i></i></label>
+                </div>
+            </div>
         </form>
-        <div class="offset-2 col-10 mt-3">
-            <button class="btn btn-lg btn-success submit" onclick="calculateRoute()">Submit</button>
+        <div class="offset-2 col-10 mt-2">
+            <button id="submitBtn" class="btn btn-lg btn-success submit">Submit</button>
         </div>
     </div>
     <!--MAP-->
     <div class="container-fluid">
-        <div id="googleMap"></div>
+        <div id="map"><!--The div containing our map must have always the same id "map" to run fine--></div>
+        <div id="output"></div>
     </div>
-    <div id="output"></div>
     
 
     <!--FOOTER-->
@@ -86,11 +94,11 @@
         </p>
       </div>
     </footer>
-
+     <!--EMBED Javascript MAPS API-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjILPJidCXRJGyhHcXb57by3tmEOW5zOA&libraries=places"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-     <!--EMBED Javascript MAPS API-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjILPJidCXRJGyhHcXb57by3tmEOW5zOA"></script>
+    
     <!-- My Javascript file-->
     <script src="javascript.js"></script>
   </body>

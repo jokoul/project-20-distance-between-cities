@@ -32,19 +32,24 @@ body {
   font-weight: 800;
   text-shadow: 2px 0 3px #198754;
 }
+label i {
+  color: #198754;
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+}
 
 /*MAP*/
 #map {
   width: 100%;
   height: 300px;
   margin: 0.5rem auto;
-  margin-bottom: 15rem;
 }
-.output {
-  background-color: #198754;
-  color: white;
+#output {
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
+  margin-bottom: 18rem;
 }
-
 /*FOOTER*/
 .footer {
   height: auto;

@@ -6,4 +6,6 @@ This application provide travel and move assistance by getting information betwe
 
 ## Stack
 
+Javascript, bootstrap, google maps API
+
 ## Launch
