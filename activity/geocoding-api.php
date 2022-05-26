@@ -64,7 +64,7 @@
                             lng:longitude,
                         })
                         //change zoom level
-                        map.setZoom(14);
+                        map.setZoom(7);
                         //Check if marker is already on the map, delete it
                         if(marker != undefined){
                             marker.setMap(null);//to delete a marker and keep always only one marker on the map.
