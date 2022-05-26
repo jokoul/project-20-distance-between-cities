@@ -65,7 +65,7 @@
 
     <!--FOOTER-->
     <footer class="footer">
-      <p>Online Notes, Copyright &copy; <?php $date = date("Y"); echo $date ?> develop by Joan Kouloumba</p>
+      <p>Distance between cities, Copyright &copy; <?php $date = date("Y"); echo $date ?> develop by Joan Kouloumba</p>
       <div>
         <ul class="social-media">
           <li>
